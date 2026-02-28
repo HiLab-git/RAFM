@@ -1,0 +1,32 @@
+{
+    "general": {
+        "name": "RAFM_test",
+        "model": {
+            "model_name": "i2irf",
+            "forward_times": 1,
+            "N": 10,
+            "solver": "euler",
+            "source_type": "image",
+            "use_mask": false,
+            "use_masked_loss": false,
+            "bank_size": 512,
+            "use_auto_tissue_mask": false,
+            "loss_type": "lpips-l1-fake",
+            "sample_type": "exponential",
+            "use_retriever": true,
+            "bank_input_source": "real",
+            "use_source_image_aid": false,
+            "use_fixed_t": false,
+            "deep_supervision": false
+        },
+        "network": {
+            "filename": "rf",
+            "netG": "unet_song_t",
+            "ngf": 64,
+            "down_step": 4,
+            "activate": false,
+            "bilinear": false
+        },
+        "result": {}
+    }
+}
